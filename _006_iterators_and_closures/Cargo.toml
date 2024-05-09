@@ -1,0 +1,72 @@
+[package]
+name = "_006_iterators_and_closures"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[[bin]]
+name = "main2"
+path = "src/main2_filter_map.rs"
+
+[[bin]]
+name = "main3"
+path = "src/main3_ok.rs"
+
+[[bin]]
+name = "main4"
+path = "src/main4_ok_or.rs"
+
+[[bin]]
+name = "main5"
+path = "src/main5_ok_or_else.rs"
+
+[[bin]]
+name = "main6"
+path = "src/main6_and_then.rs"
+
+[[bin]]
+name = "main7"
+path = "src/main7_and.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8_flatten.rs"
+
+[[bin]]
+name = "main9"
+path = "src/main9_all.rs"
+
+
+[[bin]]
+name = "main10"
+path = "src/main10_skip_zip_fold_more.rs"
+
+[[bin]]
+name = "main11"
+path = "src/main11_fold.rs"
+
+[[bin]]
+name = "main12"
+path = "src/main12_by_ref.rs"
+
+[[bin]]
+name = "main13"
+path = "src/main13_chunks_windows.rs"
+
+[[bin]]
+name = "main14"
+path = "src/main14_indices.rs"
+
+[[bin]]
+name = "main15"
+path = "src/main15_peekable.rs"
+
+[[bin]]
+name = "main16"
+path = "src/main16_dgb.rs"
+
+
+
+[dependencies]

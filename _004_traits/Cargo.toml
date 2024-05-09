@@ -1,0 +1,67 @@
+[package]
+name = "_004_traits"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "main2"
+path = "src/main2_trait.rs"
+
+[[bin]]
+name = "main3"
+path = "src/main3_impl.rs"
+
+[[bin]]
+name = "main4"
+path = "src/main4_impl.rs"
+
+[[bin]]
+name = "main5"
+path = "src/main5_trait.rs"
+
+[[bin]]
+name = "main6"
+path = "src/main6_trait_bound.rs"
+
+[[bin]]
+name = "main7"
+path = "src/main7_trait.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8_trait.rs"
+
+[[bin]]
+name = "main9"
+path = "src/main9_trait.rs"
+
+[[bin]]
+name = "main10"
+path = "src/main10_from.rs"
+
+[[bin]]
+name = "main11"
+path = "src/main11_from.rs"
+
+[[bin]]
+name = "main12"
+path = "src/main12_orphan_rule.rs"
+
+
+
+[[bin]]
+name = "main13"
+path = "src/main13_same_rule.rs"
+
+
+[[bin]]
+name = "main14"
+path = "src/main14_as_ref.rs"
+
+
+
+
+
+[dependencies]

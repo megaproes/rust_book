@@ -1,0 +1,59 @@
+[package]
+name = "_003_collections"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+
+
+
+
+[[bin]]
+name = "main2"
+path = "src/main2_hash.rs"
+
+[[bin]]
+name = "main3"
+path = "src/main3_hash_old.rs"
+
+
+[[bin]]
+name = "main4"
+path = "src/main4_entry.rs"
+
+[[bin]]
+name = "main5"
+path = "src/main5_entry.rs"
+
+
+[[bin]]
+name = "main6"
+path = "src/main6_hash_set.rs"
+
+[[bin]]
+name = "main7"
+path = "src/main7_binary_heap.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8_deque.rs"
+
+[[bin]]
+name = "main9"
+path = "src/main9_ques_mark.rs"
+
+[[bin]]
+name = "main10"
+path = "src/main10_ques_mark.rs"
+
+[[bin]]
+name = "main11"
+path = "src/main11_ques_mark.rs"
+
+[[bin]]
+name = "main12"
+path = "src/main12_error_handlings.rs"
+
+[dependencies]
