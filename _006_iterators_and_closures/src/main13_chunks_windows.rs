@@ -7,4 +7,9 @@ fn main() {
     for window in num_vec.windows(3) {
         println!("{:?}", window);
     }
+    
+    print!("\n");
+    for chunk in num_vec.chunks_exact(3) {
+        println!("{:?}", chunk);
+    }
 }

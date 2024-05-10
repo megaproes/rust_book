@@ -21,6 +21,19 @@ fn main() {
             .iter()
             .fold(0, |total_so_far, next_number| total_so_far + next_number)
     );
-    
-    
+
+    let numbers = [1, 2, 3, 4, 5];
+
+    let mut result = 0;
+
+    // for loop:
+    for i in &numbers {
+        result = result + i;
+    }
+
+    // fold:
+    let result2 = numbers.iter().fold(0, |acc, &x| acc + x);
+
+    // they're the same
+    assert_eq!(result, result2); // 15
 }

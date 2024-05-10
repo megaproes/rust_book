@@ -20,11 +20,11 @@ fn main() {
     
     // and:
     let x: Option<i32> = Some(5);
-    let y = x.and(Some(10)); // y = Some(10)
+    let y: Option<i32> = x.and(Some(10)); // y = Some(10)
     let z: Option<i32> = x.and(None); // z = None
 
     let x: Result<i32, &str> = Ok(5);
-    let y = x.and(Ok(10)); // y = Ok(10)
+    let y: Result<i32, &str> = x.and(Ok(10)); // y = Ok(10)
     let z: Result<i32, &str> = x.and(Err("error")); // z = Err("error")
     
     // and_then:

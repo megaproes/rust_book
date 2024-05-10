@@ -5,7 +5,7 @@ fn main() {
         println!("I love the number {}", number_iter.peek().unwrap());
         println!("I really love the number {}", number_iter.peek().unwrap());
         println!("{} is such a nice number\n", number_iter.peek().unwrap());
-        println!("Iterator = {}", number_iter);
+        // println!("Iterator = {}", number_iter);
         number_iter.next();
     }
 }
