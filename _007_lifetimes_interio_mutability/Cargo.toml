@@ -6,3 +6,53 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+[[bin]]
+name = "main2"
+path = "src/main2_lifetimes.rs"
+
+[[bin]]
+name = "main3"
+path = "src/main3_lifetime_type.rs"
+
+[[bin]]
+name = "main4"
+path = "src/main4_lifetime_type.rs"
+
+[[bin]]
+name = "main5"
+path = "src/main5_anonymous_lifetime.rs"
+
+[[bin]]
+name = "main6"
+path = "src/main6_test.rs"
+
+
+[[bin]]
+name = "main7"
+path = "src/main7_lifetime.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8_interior_mutability.rs"
+
+[[bin]]
+name = "main9"
+path = "src/main9_interior_mut_cell.rs"
+
+[[bin]]
+name = "main10"
+path = "src/main10_ref_cell.rs"
+
+[[bin]]
+name = "main11"
+path = "src/main11_mutex.rs"
+
+[[bin]]
+name = "main12"
+path = "src/main12_deadlock.rs"
+
+[[bin]]
+name = "main13"
+path = "src/main13_Rwlock.rs"
+
+

@@ -1,0 +1,21 @@
+0. If you don’t want to think too much about lifetime annotations yet, 
+you can mostly avoid them by using owned data as much as possible.
+
+1. A lifetime annotation is another type of generic annotation. They tell the com-
+piler what lifetimes to expect, but they don’t change how long references live.
+
+2. If you are using a &str in one of your types but will only give it string literals,
+you can avoid lifetime annotations by having it take a &'static str instead of a &'a str.
+
+3. If you need mutability but can’t or don’t want to use a &mut, try one of the four
+interior mutability types. Cell is best for Copy types, RefCell is similar to regu-
+lar references, and Mutex and RwLock can be passed between threads.
+
+4. When changing values inside a RefCell, Mutex, and RwLock, it’s easiest to
+change the values outright without making a variable that holds a borrow or a
+lock. Then, you won’t have to think about whether the variable that holds the
+borrow or lock is dropped or not.
+
+5. If you need to use variables that hold a borrow or a lock, you can use methods
+like .try_borrow() and .try_lock() to make sure that there won’t be a
+deadlock.
