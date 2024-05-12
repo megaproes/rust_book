@@ -1,0 +1,15 @@
+1. If you feel like you are using .clone() too much, maybe think about using an Rc (reference counter).
+
+2. If you like sketching out a high-level view of your code before you begin, use todo! everywhere, and the compiler will leave you alone.
+
+3. Once you understand its signature, Cow is a pretty convenient type that lets you take in both owned and borrowed values.
+
+4. If you make a new type, you can implement any traits on it you like. This is the most common way to get around the orphan rule. 
+But type aliases are just new names for existing types, so using them doesn’t change their underlying behavior.
+
+5. Because threads are independent, another thread might not be finished by the
+time main() finishes. If you want to wait for a thread to finish, use the Join-
+Handle that you get from the spawn() function.
+
+6. The compiler seems extra strict when using multiple threads because a thread
+might live longer than the data it borrows. Usually, you use the move keyword to solve this.
