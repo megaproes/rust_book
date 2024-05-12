@@ -31,6 +31,7 @@ fn main() {
     let read1 = my_rwlock.read().unwrap();
     let read2 = my_rwlock.read().unwrap();
     println!("{read1:?}, {read2:?}");
+    println!("without variable read1 = {}", *my_rwlock.read().unwrap());
     drop(read1);
     drop(read2);
     // We dropped both readers, so we can use .write().

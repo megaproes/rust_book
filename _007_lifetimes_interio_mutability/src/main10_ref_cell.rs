@@ -21,7 +21,7 @@ fn main() {
         username: "User 1".to_string(),
         active: RefCell::new(true),
     };
-    let mut borrow: std::cell::RefMut<bool> = user_1.active.borrow_mut();
+    let mut borrow: std::cell::RefMut<bool> = user_1.active.borrow_mut(); // but better without variable
     *borrow = false;
 
     // double borrow_mut will panic
