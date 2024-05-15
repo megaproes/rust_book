@@ -9,6 +9,7 @@ edition = "2021"
 [[bin]]
 name = "main2"
 path = "src/main2_todo.rs"
+
 [[bin]]
 name = "main3"
 path = "src/main3_type_aliases.rs"

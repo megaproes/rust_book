@@ -1,0 +1,94 @@
+[package]
+name = "_009_more_closures_generics_threads"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+
+[[bin]]
+name = "main2"
+path = "src/main2_closures.rs"
+
+[[bin]]
+name = "main3"
+path = "src/main3_relationship.rs"
+
+[[bin]]
+name = "main4"
+path = "src/main4_closures_are_all_unique.rs"
+
+[[bin]]
+name = "main5"
+path = "src/main5_example.rs"
+
+[[bin]]
+name = "main6"
+path = "src/main6_intro_impl.rs"
+
+[[bin]]
+name = "main7"
+path = "src/main7_impl.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8_return_closures.rs"
+
+
+[[bin]]
+name = "main9"
+path = "src/main9_return_closures.rs"
+
+[[bin]]
+name = "main10"
+path = "src/main10_arc_intro.rs"
+
+[[bin]]
+name = "main11"
+path = "src/main11_arc.rs"
+
+[[bin]]
+name = "main12"
+path = "src/main12_refactor.rs"
+
+[[bin]]
+name = "main13"
+path = "src/main13_rwlock.rs"
+
+[[bin]]
+name = "main14"
+path = "src/main14_scoped_threads.rs"
+
+[[bin]]
+name = "main15"
+path = "src/main15_scoped_threads.rs"
+
+[[bin]]
+name = "main16"
+path = "src/main16_channels.rs"
+
+[[bin]]
+name = "main17"
+path = "src/main17_channels.rs"
+
+[[bin]]
+name = "main18"
+path = "src/main18_channels.rs"
+
+[[bin]]
+name = "main19"
+path = "src/main19_thread_pool.rs"
+
+
+
+
+
+
+
+
+
+
+
+[dependencies]
+threadpool = "1.8"

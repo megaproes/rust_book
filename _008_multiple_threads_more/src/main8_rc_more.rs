@@ -34,7 +34,7 @@ fn main() {
     println!("{} was founded in {}", my_city.name, my_city.date_founded);
 }
 
-#[derive(Debug)] // with rc i don't to put lifetimes
+#[derive(Debug)] // with rc i don't put lifetimes
 struct City2 {
     name: Rc<String>,
     date_founded: u32,

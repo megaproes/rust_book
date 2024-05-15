@@ -1,0 +1,20 @@
+1. One closure will never be the same type as another closure. The only thing they have in common is 
+which trait (Fn, FnMut, and FnOnce) they implement and the rest of their signature.
+
+2. When using a closure as an input, first imagine it as a function: what arguments will it take, and 
+what will it return? After that, change fn to whichever of the three closure traits you need: 
+Fn to take by reference, FnMut to take by mutable reference, or FnOnce to take by value.
+
+3. impl Trait is more flexible than regular generics in some areas and less flexible in others. 
+The best way to get a feel for the difference is practice: if you are using regular generics somewhere, 
+see whether you can use impl Trait in its place, and vice versa. The compiler will tell you if you can’t.
+
+4. When regular threads capture items, they need to have a 'static lifetime. That lets you spawn a thread and forget about it, 
+or you can use .join() to wait for a thread to end.
+
+5. Channels in the standard library let you make as many senders as you like. To get a feel for this, try making a channel 
+and putting senders everywhere you can think of: as parameters of structs, in function inputs, in their own threads, and
+so on. This will give you a feel for just how useful they can be.
+
+6. Scoped threads let you use threads without having to think about the 'static lifetime. 
+Just make sure that your threads eventually end because if they don’t, their scope will also never end (and then your program will never end).
