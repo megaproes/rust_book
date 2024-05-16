@@ -1,0 +1,41 @@
+[package]
+name = "_010_box_rust_doc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+[[bin]]
+name = "main2"
+path = "src/main2_copy_clone.rs"
+
+
+[[bin]]
+name = "main3"
+path = "src/main3_deprecated.rs"
+
+[[bin]]
+name = "main4"
+path = "src/main4_box.rs"
+
+[[bin]]
+name = "main5"
+path = "src/main5_box.rs"
+
+[[bin]]
+name = "main6"
+path = "src/main6_box.rs"
+
+
+
+
+
+
+
+
+
+
+
+
+
