@@ -1,0 +1,21 @@
+1. Clicking on the [src] button in documentation is a great habit to get into.
+You’ll get more insight into how other code works even if you don’t understand
+everything yet.
+
+2. The assert_eq! macro is everywhere in documentation to show the reader the
+values of variables at certain points in the code.
+
+3. A Box is a smart pointer that points to data on the heap. A Box owns its data.
+
+4. Using a Box<dyn trait> lets you “erase” a type. The type inside the Box is still
+concrete, but when inside the Box, it can only be used as a trait object. In other
+words, you can only use its trait methods.
+
+5. You can downcast a trait object back to a concrete type as long as you know what
+concrete type it might be. You can only try downcasting to one type at a time.
+
+6. Static dispatch happens at compile time, during which the compiler turns
+generic types into concrete ones. Dynamic dispatch happens during run time.
+
+7. Any type can implement Error, but a type can be of any size. To satisfy the com-
+piler when returning errors, you can return a Box<dyn Error> instead

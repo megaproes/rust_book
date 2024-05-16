@@ -27,12 +27,18 @@ path = "src/main5_box.rs"
 name = "main6"
 path = "src/main6_box.rs"
 
+[[bin]]
+name = "main7"
+path = "src/main7_box_error.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8_errors.rs"
 
 
-
-
-
-
+[[bin]]
+name = "main9"
+path = "src/main9_error.rs"
 
 
 
