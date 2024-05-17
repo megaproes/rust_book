@@ -40,7 +40,9 @@ path = "src/main8_errors.rs"
 name = "main9"
 path = "src/main9_error.rs"
 
-
+[[bin]]
+name = "main10"
+path = "src/main10_downcast.rs"
 
 
 

@@ -19,7 +19,7 @@ impl fmt::Debug for MyError {
             .finish()
     }
 }
-fn give_error_back(is_tru: bool) -> Box<dyn Error> {
+fn give_error_back(is_true: bool) -> Box<dyn Error> {
     if is_true {
         Box::new(MyError::TooMuchStuff)
     } else {

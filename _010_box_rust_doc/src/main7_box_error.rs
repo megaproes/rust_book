@@ -8,6 +8,7 @@ impl fmt::Display for ErrorOne {
         write!(f, "You got the first error!")
     }
 }
+
 #[derive(Debug)]
 struct ErrorTwo;
 impl Error for ErrorTwo {}

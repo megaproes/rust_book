@@ -1,0 +1,20 @@
+1. Putting your code into modules is a good way to start thinking about what parts
+of your types should be made public.
+
+2. Since Rust makes everything private by default, you can simply use the pub key-
+word whenever you need it to compile your code. Or you can rewrite your code
+if you don’t want to give access to your type’s parameters.
+
+3. A test function is similar to main() because it takes no arguments.
+
+4. Use #[cfg(test)] over test code to let the compiler know that it doesn’t need
+to compile it unless you are doing tests. You can still keep the test code close to
+your other code, just don’t forget the annotation.
+
+5. Test-driven development is great if you already know what you want your final
+product to look like. It can also help if you sort of know what you want your
+final product to look like. As you write the tests, you will get a clearer and
+clearer picture of what you are trying to make.
+
+6. With TDD, all tests will fail in the beginning. Write as many as you can think of
+and then start writing the code to make them pass.
