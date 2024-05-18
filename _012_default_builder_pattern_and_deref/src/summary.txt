@@ -1,0 +1,18 @@
+1. Implementing Default for your types has some nice benefits. Among other
+benefits, it makes your code cleaner and lets your type be used wherever there
+is a Default trait bound.
+
+2. The builder pattern has a lot of flexibility. You can use it just because you like
+the syntax, or you can use it to give a lot of control over how your types are used.
+
+3. Making a separate type that can only be used as a builder to turn into another
+type is a great way to make sure that your types don’t get misused.
+
+4. With Deref and DerefMut, you can make your own types that have access to the
+methods of other types they hold.
+
+5. Implementing DerefMut after Deref is easy: simply copy and paste the code,
+remove the line with the associated type, and add the word mut everywhere.
+
+6. Deref is best used for simple types like smart pointers. Using it for more com-
+plex types can make your code difficult to understand.

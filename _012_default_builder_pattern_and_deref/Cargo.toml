@@ -5,4 +5,53 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "main2"
+path = "src/main2_default.rs"
+
+[[bin]]
+name = "main3"
+path = "src/main3_default_cases.rs"
+
+[[bin]]
+name = "main4"
+path = "src/main4_builder.rs"
+
+[[bin]]
+name = "main5"
+path = "src/main5_builder_refactor.rs"
+
+[[bin]]
+name = "main6"
+path = "src/main6_builder_rafactor2.rs"
+
+[[bin]]
+name = "main7"
+path = "src/main7_deref_intro.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8_deref.rs"
+
+[[bin]]
+name = "main9"
+path = "src/main9_deref.rs"
+
+[[bin]]
+name = "main10"
+path = "src/main10_deref.rs"
+
+[[bin]]
+name = "main11"
+path = "src/main11_deref_mut.rs"
+
+
+
+
+
+
+
+
+
+
 [dependencies]
