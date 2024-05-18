@@ -1,0 +1,30 @@
+[package]
+name = "_013_const_unsafe_and_extern_crates"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "main2"
+path = "src/main2_const_fn.rs"
+
+[[bin]]
+name = "main3"
+path = "src/main3_mut_static.rs"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[dependencies]
