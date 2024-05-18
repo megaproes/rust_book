@@ -1,0 +1,19 @@
+1. Const generics let you be generic over const values. These generics are most
+useful in arrays due to the unique type signature arrays have: both a type and a length.
+
+2. More and more methods in the standard library are becoming const fn, which
+lets you, as a Rust user, more easily make your own functions into const fns if you want.
+
+3. Unsafe Rust has good reasons to exist, especially because the Rust compiler
+isn’t able to understand other languages and determine whether they are safe or not.
+
+4. The word unsafe is meant to be a bit shocking so that people will not use it too
+much. In reality, it is sort of a trust_me_I_know_what_Im_doing block (if you know what you’re doing).
+
+5. To do anything with an unsafe function in Rust, you will need to put it inside an
+unsafe block. The same goes for anything else that is unsafe like a static mut,
+even if you just want to print it.
+
+6. To add an external crate if Rust is installed, go to Cargo.toml and type the crate
+name and the version number. If you are using the Playground, you won’t even
+need to do that if the crate is popular enough.
