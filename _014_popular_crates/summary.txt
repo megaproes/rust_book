@@ -1,0 +1,18 @@
+ External crates are used all the time in Rust, even for key functionality like dealing with time.
+
+2. If you are doing a lot of heavy computing with iterators (and don’t feel like
+spawning extra threads yourself), try bringing in the rayon crate.
+
+3. Anyhow is the most frequently used external crate for dealing with multiple
+errors, while thiserror can be used to easily create your own error types.
+
+4. The lazy_static and once_cell crates are used for creating global variables
+that can’t be constructed at compile time.
+
+5. The functionality of both lazy_static and once_cell are being ported to the
+standard library, so eventually you may not need to use any external crates at all
+to create any global variables.
+
+6. Blanket implementations let you give trait methods to any types you want.
+These are used everywhere in the standard library, too, such as when you get
+the .to_string() method for free for anything that implements Display.

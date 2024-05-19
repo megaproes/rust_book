@@ -20,9 +20,45 @@ path = "src/main4_chrono.rs"
 name = "main5"
 path = "src/main5_chrono.rs"
 
+[[bin]]
+name = "main6"
+path = "src/main6_chrono.rs"
+
+[[bin]]
+name = "main7"
+path = "src/main7_rayon.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8_blanket_trait.rs"
+
+[[bin]]
+name = "main9"
+path = "src/main9_blanket_trait_error.rs"
+
+[[bin]]
+name = "main10"
+path = "src/main10_blanket.rs"
+
+[[bin]]
+name = "main11"
+path = "src/main11_blanket.rs"
+
+[[bin]]
+name = "main12"
+path = "src/main12_blanket.rs"
+
+[[bin]]
+name = "main13"
+path = "src/main13_logging.rs"
+
 
 
 [dependencies]
 serde = { version = "1.0.202", features = ["derive"] }
 serde_json = "1.0.117"
 chrono = "0.4.38"
+rayon = "1.10.0"
+log = "0.4"
+env_logger = "0.11.3"
+flexi_logger = "0.28.0"
