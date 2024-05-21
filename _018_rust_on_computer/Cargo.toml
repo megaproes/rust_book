@@ -1,0 +1,50 @@
+[package]
+name = "_018_rust_on_computer"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "main2"
+path = "src/main2_command_line.rs"
+
+[[bin]]
+name = "main3"
+path = "src/main3_env.rs"
+
+[[bin]]
+name = "main4"
+path = "src/main4_env.rs"
+
+
+[[bin]]
+name = "main5"
+path = "src/main5_env.rs"
+
+[[bin]]
+name = "main6"
+path = "src/main6_files.rs"
+
+[[bin]]
+name = "main7"
+path = "src/main7_files.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8_doc.rs"
+
+
+
+
+
+
+
+
+
+
+
+
+
+[dependencies]
+log = "0.4"
+env_logger = "0.11.3"
+flexi_logger = "0.28.0"

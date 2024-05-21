@@ -1,0 +1,20 @@
+1. Use cargo check when building your code to see if it compiles, and cargo run
+to test it out. Don’t forget that it won’t be optimized for speed unless you build with the --release flag
+
+2. If you are curious whether code is being optimized, try using Godbolt on differ-
+ent optimization levels. Even without knowing assembly, you can get a general
+sense of what is happening on a lower level.
+
+3. Debug printing a String will give more insight into what actual input is being
+passed in when working with user input. Display output looks cleaner but may hide some important information.
+
+4. Args are arguments passed in on the command line, while Vars are the envi-
+ronment variables that have to do with overall configuration. An example of an
+argument is --open for cargo doc, and an example of an environment variable is RUST_BACKTRACE that we saw in chapter 14.
+
+5. Be sure to take extra care when working with files, and use File::options()
+unless you are absolutely sure that no files will be unknowingly deleted when creating a new one.
+
+6. Make use of the "cargo doc --open" command a lot if you are writing open
+source code for other people to use. This will show you right away how well doc-
+umented your code is to someone reading it for the first time.
