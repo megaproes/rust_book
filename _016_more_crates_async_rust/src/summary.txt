@@ -1,0 +1,13 @@
+1. If the compiler can’t find a type for no good reason, check to see whether you need a feature flag to enable it.
+
+2. The most important thing to remember about async is that it doesn’t block
+threads. Regular functions block them.
+
+3. An async function just returns a Future, which doesn’t do anything. You have to
+.await it to get some actual usable output.
+
+4. There are many ways of working with multiple futures. You can join! them
+together, select! to race them against each other and take the first that completes, and so on.
+
+5. Much of this functionality in the async ecosystem is found in external crates.
+These often work as staging grounds for testing out new functionality to stabilize and add to the standard library.

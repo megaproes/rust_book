@@ -1,0 +1,46 @@
+[package]
+name = "_016_more_crates_async_rust"
+version = "0.1.0"
+edition = "2021"
+
+
+[[bin]]
+name = "main2"
+path = "src/main2_async.rs"
+
+[[bin]]
+name = "main3"
+path = "src/main3_async.rs"
+
+[[bin]]
+name = "main4"
+path = "src/main4_async.rs"
+
+[[bin]]
+name = "main5"
+path = "src/main5_async.rs"
+
+[[bin]]
+name = "main6"
+path = "src/main6_async.rs"
+
+
+[[bin]]
+name = "main7"
+path = "src/main7_without_join.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8_select.rs"
+
+[[bin]]
+name = "main9"
+path = "src/main9_try_join.rs"
+
+
+
+[dependencies]
+reqwest = { version = "0.12.4", features = ["blocking"] }
+tokio = { version = "1.37.0", features = ["macros", "rt-multi-thread", "time"]}
+futures = "0.3.30"
+rand = "0.9.0-alpha.1"
