@@ -1,0 +1,61 @@
+[package]
+name = "_017_tour_to_std"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "main2"
+path = "src/main2_from.rs"
+
+[[bin]]
+name = "main3"
+path = "src/main3_from_fn.rs"
+
+
+[[bin]]
+name = "main4"
+path = "src/main4_char.rs"
+
+[[bin]]
+name = "main5"
+path = "src/main5_integers.rs"
+
+[[bin]]
+name = "main6"
+path = "src/main6_ops_traits.rs"
+
+[[bin]]
+name = "main7"
+path = "src/main7_floats.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8_associated_types.rs"
+
+
+[[bin]]
+name = "main9"
+path = "src/main9_associated_consts.rs"
+
+[[bin]]
+name = "main10"
+path = "src/main10_associated_consts.rs"
+
+[[bin]]
+name = "main11"
+path = "src/main11_bool.rs"
+
+[[bin]]
+name = "main12"
+path = "src/main12_vec.rs"
+
+[[bin]]
+name = "main13"
+path = "src/main13_string.rs"
+
+
+
+
+
+[dependencies]
+rand = "0.9.0-alpha.1"

@@ -23,4 +23,33 @@ async fn main() {
         wait_and_give_u8(3)
     );
     println!("{nums:?}"); // GREAT!
+
+    use tokio::join;
+
+    #[tokio::main]
+    async fn main() {
+        let future1 = async {
+            // This asynchronous block will run concurrently.
+            println!("Hello from future 1!");
+        };
+
+        let future2 = async {
+            // This asynchronous block will also run concurrently.
+            println!("Hello from future 2!");
+        };
+
+        join!(future1, future2);
+        // Both futures will complete before reaching this point.
+        println!("Hello from the main future!");
+    }
+    // very similar to scoped threads:
+    thread::scope(|s| {
+        s.spawn(|| {
+            // This thread will run concurrently.
+            println!("Hello from a thread!");
+        });
+        // Additional threads can be spawned here.
+    });
+    // All threads spawned in the scope are guaranteed to finish before this point.
+    println!("Hello from the main thread!");
 }

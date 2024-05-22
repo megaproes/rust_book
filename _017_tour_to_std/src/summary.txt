@@ -1,0 +1,15 @@
+1. Even everyday types like bool and char have new methods added to them all
+the time, so keep an eye on the release notes for every new version of Rust to see what has been made available.
+
+2. Be sure to use checked operations if you ever think any of your numeric types
+may overflow. They require a bit more typing, but the extra guarantees are worth it.
+
+3. With associated consts, we now know all three associated items. The other two
+are associated functions and associated types.
+
+4. Despite the long name, associated items are not that intimidating: associated
+functions are just functions, associated types are just types declared inside a
+trait, and associated constants are just const values on a type or a trait.
+
+5. Try doing your own tour as well by taking a look at the methods and traits for
+the types you use the most in Rust. There is a lot in the standard library that we have only scratched the surface of.
