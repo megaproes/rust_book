@@ -1,0 +1,16 @@
+1. The functions in the std::mem module are really convenient for writing shorter
+code and getting around lifetime problems.
+
+2. With a panic hook, you can create your own behavior when a panic happens.
+
+3. You can shrink your binary size a bit by setting the panic behavior to abort
+instead of unwinding the stack.
+
+4. A backtrace is now easy to capture at run time without needing an external
+crate to do it. You will probably see the backtrace crate in a lot of external
+code, though, since the backtrace module is a recent addition to the standard library.
+
+5. The cfg! macro is a quick way to write code that reacts differently depending
+on the operating system or any other configuration.
+
+6. The thread_local! macro lets you create static values that don’t get shared between threads.
