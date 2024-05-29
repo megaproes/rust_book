@@ -11,7 +11,7 @@ enum Banks {
     TorontoDominionBank,
     SiliconValleyBank, // And so on...
 }
-fn get_swift_code(bank: &Bank) -> &'static str {
+fn get_swift_code(bank: &Banks) -> &'static str {
     use Banks::*;
     match bank {
         BankOfAmerica => "BOFAUS3N",

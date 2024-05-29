@@ -1,0 +1,10 @@
+1. Macros are used a lot but rarely written. Very few people are macro experts, but
+learning to read them is important.
+
+2. A macro can take any input, but if you tell the macro the kind of input (an
+expression, statement, etc.), you can give the input a name and use it in a similar way to a variable.
+
+3. Macros can call other macros and even call themselves.
+A lot of the macros in the standard library are built into the compiler, and their details can’t be seen.
+
+4. Most people turn to macros for the first time to save time and reduce code duplication.

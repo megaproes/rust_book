@@ -3,4 +3,28 @@ name = "_019_my_own_macros"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "main2"
+path = "src/main2_macros.rs"
+
+
+[[bin]]
+name = "main3"
+path = "src/main3_macros.rs"
+
+[[bin]]
+name = "main4"
+path = "src/main4_macros.rs"
+
+[[bin]]
+name = "main5"
+path = "src/main5_macros.rs"
+
+[[bin]]
+name = "main6"
+path = "src/main6_macros.rs"
+
+[[bin]]
+name = "main7"
+path = "src/main7_matches.rs"
 [dependencies]
